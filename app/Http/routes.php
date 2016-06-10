@@ -26,8 +26,17 @@ Route::group(['prefix'=>'tin-tuc'],function(){
 
     Route::get('the-thao',function(){
        $bong_da='Real Marid is become champion';
-       return view('TheThao',compact('bong_da'));
+       return view('site.TheThao',compact('bong_da'));
     });
     Route::get('giai-tri','TinTuc@getGiaiTri');
 
+});
+View::share('title','Đây là Laravel first');
+
+Route::get('schema/create',function(){
+    Schema::create('khoa',function($table){
+        $table->increments('id');
+        $table->string('ten_khoa');
+        $table->integer('so_luong');
+    });
 });

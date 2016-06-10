@@ -11,8 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class TinTuc extends BaseController
 {
     public function getGiaiTri(){
-        return view('GiaiTri');
+        return view('site.GiaiTri');
     }
-
 
 }

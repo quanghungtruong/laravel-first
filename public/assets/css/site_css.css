@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body {
+    height: 100%;
+}
+body{
+    width: 100%;
+    height:100%;
+    background-color:#fff ;
+}
+.container{
+    width: 1000px;
+    height:100% ;
+    margin:0 auto ;
+    background-color:#204d74 ;
+    border:1px solid #23527c ;
+}
+.header{
+    width:100% ;
+    height:150px;
+    background-color: #2b542c;
+}
+.content{
+    overflow:hidden ;
+    width:100% ;
+}
+.left-sidebar{
+    float:left;
+    width:30%;
+    height:500px ;
+}
+.main-content{
+    float:left;
+    width:70% ;
+    background-color:#fff ;
+    height:500px;
+}
+.footer{
+    height:150px;
+    width:100% ;
+    background-color: #080808;
+}
