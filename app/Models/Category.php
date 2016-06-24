@@ -12,5 +12,5 @@ class Category extends Model
     public function reProduct(){
         return $this->hasMany('App\Models\Product','cat_id');
     }
-
+    
 }

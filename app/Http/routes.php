@@ -36,10 +36,8 @@ Route::group(['prefix'=>'tin-tuc'],function(){
 });
 View::share('title','Đây là Laravel first');
 
-Route::get('schema/create',function(){
-    Schema::create('khoa',function($table){
-        $table->increments('id');
-        $table->string('ten_khoa');
-        $table->integer('so_luong');
-    });
+Route::get('form/add-category',function(){
+    return view('site.form');
 });
+Route::post('form/add-category',['as'=>'addCat','uses'=>'TinTucController@addCategory']);
+Route::any('{all?}','TinTucController@addCategory')->where('all','.*');

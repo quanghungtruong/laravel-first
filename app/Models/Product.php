@@ -13,4 +13,5 @@ class Product extends Model
     public function reCategory(){
         return $this->belongsTo('App\Models\Category','cat_id');
     }
+
 }

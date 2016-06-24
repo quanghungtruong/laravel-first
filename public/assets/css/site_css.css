@@ -16,6 +16,7 @@ body{
     margin:0 auto ;
     background-color:#204d74 ;
     border:1px solid #23527c ;
+
 }
 .header{
     width:100% ;
@@ -33,9 +34,10 @@ body{
 }
 .main-content{
     float:left;
-    width:70% ;
+    width:68% ;
     background-color:#fff ;
     height:500px;
+    padding:10px;
 }
 .footer{
     height:150px;

@@ -8,7 +8,6 @@
             <th width="20%">Category</th>
         </tr>
 
-
         <?php
             print_r($data);
         ?>

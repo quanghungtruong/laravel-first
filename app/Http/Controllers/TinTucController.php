@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Collection;
 use App\Models\Product;
 use App\Models\Category;
+use Symfony\Component\HttpFoundation\Request;
+use App\Http\Requests\FormRequest;
 class TinTucController extends BaseController
 {
     public function getGiaiTri(){
@@ -22,6 +24,12 @@ class TinTucController extends BaseController
     public function getCategory(){
         $cat=Category::find(5)->reProduct()->get()->toArray();
         return view('site.SanPham',compact('cat'));
+    }
+    public function addCategory(FormRequest $request ){
+        $data=new Category();
+        $data->cat_name=$request->cat_name;
+        $data->save();
+        return redirect('/form/add-category');
     }
 
 }
